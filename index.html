@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TACO WALK TOKYO｜東京駅から新宿まで、タコスをめぐる18km</title>
+<style>
+:root{--ink:#242820;--muted:#6b7065;--paper:#f7f2e7;--card:#fffdf7;--tomato:#c6533b;--green:#526b4d;--yellow:#e5bd5b;--line:#d9d1bf}
+*{box-sizing:border-box} body{margin:0;background:var(--paper);color:var(--ink);font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif;line-height:1.65}
+a{color:var(--green);text-decoration-thickness:1px;text-underline-offset:3px}
+.wrap{max-width:1000px;margin:auto;padding:22px}
+.hero{background:var(--green);color:#fffdf4;border-radius:22px;padding:34px 30px 28px;position:relative;overflow:hidden}
+.kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#e8d69f;font-weight:700}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(38px,7vw,70px);line-height:.98;letter-spacing:-.04em;margin:14px 0 12px}
+.hero p{max-width:650px;margin:0;color:#f1eddf}
+.hero .meta{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}
+.pill{border:1px solid #ffffff70;border-radius:999px;padding:5px 11px;font-size:12px}
+.section{margin:30px 0}.eyebrow{color:var(--tomato);font-size:11px;font-weight:800;letter-spacing:.16em}
+h2{font-size:25px;line-height:1.25;margin:5px 0 14px}
+h3{font-size:19px;margin:0 0 6px}
+.lead{color:var(--muted);margin-top:-4px}
+.routebox{background:#eee7d8;border:1px solid var(--line);border-radius:18px;padding:18px}
+.route{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;align-items:start;margin:12px 0}
+.stop{text-align:center;position:relative;font-size:12px}
+.stop:not(:last-child):after{content:"";position:absolute;top:13px;left:60%;width:80%;border-top:2px dashed #a8a18e}
+.dot{width:27px;height:27px;background:var(--tomato);border:4px solid #f8f1df;border-radius:50%;margin:0 auto 7px;position:relative;z-index:1;box-shadow:0 0 0 1px var(--tomato)}
+.stop:nth-child(2) .dot{background:var(--yellow);box-shadow:0 0 0 1px var(--yellow)}
+.stop:nth-child(3) .dot{background:var(--green);box-shadow:0 0 0 1px var(--green)}
+.stop:nth-child(4) .dot{background:var(--tomato)}
+.stop:nth-child(5) .dot{background:var(--green);box-shadow:0 0 0 1px var(--green)}
+.stop b{display:block;font-size:12px}
+.route-note{font-size:12px;color:var(--muted);margin:8px 0 0}
+.timeline{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.time{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:12px 14px}
+.time strong{color:var(--tomato);font-size:13px;display:block}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:18px;display:flex;flex-direction:column}
+.card .num{font:italic 30px Georgia;color:var(--tomato);line-height:1;margin-bottom:8px}
+.card .sub{font-size:12px;color:var(--muted);margin-bottom:10px}
+.card p{margin:7px 0;font-size:14px}
+.tag{display:inline-block;background:#eee8d8;border-radius:999px;padding:3px 8px;font-size:11px;margin:2px 3px 2px 0}
+.card .links{margin-top:auto;padding-top:12px;font-size:13px}
+.callout{border-left:4px solid var(--yellow);padding:9px 14px;background:#f1ead8;border-radius:0 10px 10px 0;font-size:13px}
+.altgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.alt{background:#f0eadc;border-radius:14px;padding:14px}
+.alt p{font-size:13px;margin:6px 0}
+.footer{border-top:1px solid var(--line);padding:18px 0 8px;color:var(--muted);font-size:11px}
+@media(max-width:650px){.wrap{padding:12px}.hero{padding:25px 20px}.cards,.timeline{grid-template-columns:1fr}.altgrid{grid-template-columns:1fr}.route{gap:2px}.stop b{font-size:10px}.stop{font-size:10px}.routebox{padding:12px 8px}}
+@media print{body{background:white}.wrap{max-width:none;padding:10mm}.hero,.card,.routebox{break-inside:avoid}.section{margin:18px 0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <div class="kicker">A TACO WALKING GUIDE · TOKYO</div>
+  <h1>TACO WALK<br>TOKYO.</h1>
+  <p>東京駅から日本橋・小伝馬町を抜け、四谷を経て新宿へ。街を歩いて、タコスを少しずつ食べ比べる土曜日。</p>
+  <div class="meta"><span class="pill">SATURDAY PLAN</span><span class="pill">約15–18 km目安</span><span class="pill">4 TAQUERIAS / 3–4 STOPS</span><span class="pill">START 10:30</span></div>
+</header>
+
+<section class="section">
+  <div class="eyebrow">THE ROUTE</div><h2>東から西へ、タコスをつなぐ。</h2>
+  <p class="lead">東京駅を出発。日本橋で2軒、四谷で遅めのランチ、新宿御苑前でフィニッシュ。</p>
+  <div class="routebox">
+    <div class="route">
+      <div class="stop"><div class="dot"></div><b>東京駅</b><span>10:30</span></div>
+      <div class="stop"><div class="dot"></div><b>KITADE</b><span>11:00</span></div>
+      <div class="stop"><div class="dot"></div><b>ØL La Cabina</b><span>11:45頃</span></div>
+      <div class="stop"><div class="dot"></div><b>EL ARBOL</b><span>15:00</span></div>
+      <div class="stop"><div class="dot"></div><b>tacos trap'</b><span>16:30以降</span></div>
+    </div>
+    <p class="route-note">歩行ルートの目安：東京駅 → 日本橋本町 → 小伝馬町 → 浅草橋・神田周辺 → 日比谷・皇居外苑方面 → 四谷 → 新宿御苑前。距離は寄り道・通る道で変わる概算です。地図アプリで徒歩経路を確認してください。</p>
+    <p><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Tokyo+Station&destination=tacos+trap%27+Shinjuku+1-20-6&waypoints=Kitade+Tacos+Commissary|OL+La+Cabina+Kodenmacho|EL+ARBOL+Yotsuya&travelmode=walking">Googleマップで徒歩ルートを開く ↗</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="eyebrow">DAY PLAN</div><h2>土曜日のタイムテーブル</h2>
+  <div class="timeline">
+    <div class="time"><strong>10:30</strong>東京駅を出発。日本橋方面へウォームアップ。</div>
+    <div class="time"><strong>11:00–11:35</strong>KITADE TACOS。まずはタコス1〜2個。</div>
+    <div class="time"><strong>11:45–12:20</strong>ØL La Cabina。もう1個＋コーヒーなど。</div>
+    <div class="time"><strong>12:20–14:40</strong>浅草橋・神田・日比谷方面を経由して四谷へ。街歩きメイン。</div>
+    <div class="time"><strong>14:40</strong>EL ARBOL到着。少し早めに着いてひと息。</div>
+    <div class="time"><strong>15:00–15:50</strong>EL ARBOLで遅めのランチ。</div>
+    <div class="time"><strong>16:00–16:30</strong>新宿御苑方面へ。食後の散歩。</div>
+    <div class="time"><strong>16:30–</strong>tacos trap'で締め。気になる種類を1〜2個。</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="eyebrow">THE TACO STOPS</div><h2>立ち寄る4軒</h2>
+  <div class="cards">
+    <article class="card">
+      <div class="num">01</div><h3>KITADE TACOS COMMISSARY</h3>
+      <div class="sub">日本橋本町3-11-5｜小伝馬町・新日本橋エリア</div>
+      <span><span class="tag">土曜 11:00–21:00</span><span class="tag">カジュアル</span><span class="tag">自家製トルティーヤ</span></span>
+      <p><b>ここがポイント：</b>北海道産トウモロコシ100%の自家製トルティーヤ。COMMISSARY内のタコスカウンターで、フードホールらしい気軽な雰囲気。</p>
+      <p><b>おすすめ：</b>チキンティンガ、ポークカルニタス。最初の一軒なので、まずは1〜2個で。</p>
+      <div class="links"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Kitade+Tacos+Commissary+Nihonbashihoncho">地図 ↗</a>　·　<a target="_blank" rel="noopener" href="https://www.kitadeshokudo.com/pages/kitade-tacos">公式サイト ↗</a></div>
+    </article>
+    <article class="card">
+      <div class="num">02</div><h3>ØL La Cabina</h3>
+      <div class="sub">日本橋小伝馬町16-12｜小伝馬町駅近く</div>
+      <span><span class="tag">土曜 10:00–22:00（掲載情報）</span><span class="tag">クラフトビール</span><span class="tag">カフェ</span></span>
+      <p><b>ここがポイント：</b>クラフトビール、コーヒー、メキシカンが同居する少しユニークな店。カジュアルでモダン、海外の街角のような空気感。</p>
+      <p><b>おすすめ：</b>カルニータスやフィッシュ・バハ系のタコス。ここでは1個にして、後半に余力を残すのも手。</p>
+      <div class="links"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=OL+La+Cabina+Kodenmacho">地図 ↗</a></div>
+    </article>
+    <article class="card">
+      <div class="num">03</div><h3>EL ARBOL</h3>
+      <div class="sub">四谷1-7 第2鹿倉ビル1F｜四ツ谷駅徒歩約5分</div>
+      <span><span class="tag">土曜 15:00–23:00</span><span class="tag">老舗メキシカン</span><span class="tag">遅めランチ</span></span>
+      <p><b>ここがポイント：</b>1999年から四谷で営業するメキシコ料理店。店の人の温かさも含め、落ち着いて食事を楽しむ一軒。</p>
+      <p><b>おすすめ：</b>自家製タコス。焼きタコス・揚げタコスがあり、複数人なら違う種類を分け合うのもよさそう。</p>
+      <div class="links"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=EL+ARBOL+Yotsuya+Tokyo">地図 ↗</a>　·　<a target="_blank" rel="noopener" href="https://www.elarbol.jp/">公式サイト ↗</a></div>
+    </article>
+    <article class="card">
+      <div class="num">04</div><h3>tacos trap' 本店</h3>
+      <div class="sub">新宿1-20-6 石原共同ビル1F｜新宿御苑前駅徒歩約2分</div>
+      <span><span class="tag">土曜 12:00–23:00</span><span class="tag">タコス専門店</span><span class="tag">小さなお店</span></span>
+      <p><b>ここがポイント：</b>トウモロコシから作るグルテンフリーのソフトトルティーヤ。タコスを主役にした小さな専門店。</p>
+      <p><b>おすすめ：</b>定番のポーク・カルニータス。常時約15種類のタコスがあるので、最後に気になる具材を選んで締めたい。</p>
+      <div class="links"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=tacos+trap+Shinjuku+1-20-6">地図 ↗</a>　·　<a target="_blank" rel="noopener" href="https://www.tacos-trap.jp/">公式サイト ↗</a></div>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="eyebrow">ALMOST ON THE ROUTE</div><h2>今回は見送るけど、覚えておきたい店。</h2>
+  <p class="lead">「もう一軒行けそう」「別の日にこのエリアを歩きたい」ときの候補。</p>
+  <div class="altgrid">
+    <article class="alt"><h3>Kitade Tacos & Sake</h3><p><b>人形町1-19-5｜土日祝 12:00–23:00</b></p><p>キタデの別店舗。メキシコのストリートタコスと日本酒を組み合わせたコンセプト。小伝馬町から少し南東に寄るなら候補。</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Kitade+Tacos+and+Sake+Ningyocho">地図 ↗</a></article>
+    <article class="alt"><h3>Jumbo Tacos</h3><p><b>神田須田町2-11-8｜土曜 11:00–20:00（掲載情報）</b></p><p>沖縄タコス／タコライス寄りの一軒。メキシコのタケリアとは別ジャンルだけど、神田周辺で気軽に寄れる候補。</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Jumbo+Tacos+Kanda+Sudacho">地図 ↗</a></article>
+    <article class="alt"><h3>EL CARACOL</h3><p><b>四谷4-10｜土曜 17:00–22:30</b></p><p>四谷三丁目寄りの小さなメキシカン。カルニータスやメヌードなど、タコス以外のメキシコ料理も気になる店。今回は15時のEL ARBOLを優先して見送り。</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=EL+CARACOL+Yotsuya+Tokyo">地図 ↗</a></article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="eyebrow">A SMALL STRATEGY</div><h2>4軒を楽しむための食べ方。</h2>
+  <div class="callout"><b>序盤は控えめに。</b> KITADE 1〜2個 → La Cabina 1個 → EL ARBOLで少ししっかり → tacos trap'で1〜2個、くらいが食べ比べ向き。4軒でフルセットを頼むと、後半はかなり満腹になりそう。</div>
+  <p class="lead" style="margin-top:12px">EL ARBOLは土曜15時開店。14:40頃の到着を目安に、途中の街歩き時間を調整。臨時休業・営業時間変更は当日までに各店の公式情報で再確認を。</p>
+</section>
+<footer class="footer">TACO WALK TOKYO · Personal walking guide · 営業時間は公開情報をもとに記載。特にØL La Cabina・近隣候補は掲載情報のため、訪問前に最新情報をご確認ください。距離はルート取りによる概算です。</footer>
+</div>
+</body>
+</html>
